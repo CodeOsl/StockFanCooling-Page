@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    font: 14px sans-serif;
+    width: 100%;
+}
+
+img {
+    width: 72px;
+    margin: -72px auto;
+    float: left;
+    display: block;
+}
+
+header h1 {
+    color: white;
+    background: black;
+    padding: 20px;
+    font-weight: lighter;
+    font-display: block;
+    margin-left: 70px;
+
+}
+
+header, menu, footer {
+    display: block;
+}
+
+body {
+    display: block;
+    background: black;
+}
+
+.cabecera {
+    display: block;
+}
+
+.cabecera h1 {
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner {
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    height: 90%;
+    border: 1px solid black;
+    background-size: 100% 100%;
+    animation: banner 16s infinite;
+}
+
+@keyframes banner {
+    0%, 30% {
+        background-image: url(Images/Gigabyte.png);
+    }
+    35%, 65% {
+        background-image: url(Images/bannerasus.jpg);
+    }
+    70%, 100% {
+        background-image: url(Images/asrock.jpg);
+    }
+}
+
+/* AQUI INICIA LA BARRA CON ENLACES SOCIALES */
+
+.socialbar {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 1.5rem;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    z-index: 100;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    transition: all .5%;
+}
+
+.icon-facebook {
+    background: black;
+}
+
+.icon-instagram {
+    background: #b91819;
+}
+
+.icon-twitter {
+    background: black;
+    border-radius: 0 0 0 1rem;
+}
+
+.icon-twitter:hover {
+    transform: scale(1.2);
+    background: #b91819;
+    transition: .3s;
+}
+
+.icon-facebook:hover {
+    transform: scale(1.2);
+    background: #b91819;
+    transition: .3s;
+}
+
+.icon-instagram:hover {    
+    transform: scale(1.5);
+    background: black;
+    transition: .3s;
+}
+
+/* ACA TERMINA LA BARRA DE ENLACES SOCIALES */
+
+/* REDIRECCION YOUTUBE */
+
+#youtube {
+  font-size: 40px;
+  z-index: 100%;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  margin-top: auto;
+  text-align: center;
+}
+
+/* AQUI TERMINA REDIRECCION YOUTUBE */
+
+.pie {
+    color: white;
+    display: block;
+    list-style: none;
+    z-index: 100;
+    position: static;
+    margin: 20px;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+
