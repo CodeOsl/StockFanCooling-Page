@@ -48,6 +48,8 @@ body {
     margin: 0 auto;
 }
 
+/* BANNERS */
+
 .banner {
     margin: auto;
     margin-top: 10px;
@@ -69,6 +71,8 @@ body {
         background-image: url(Images/asrock.jpg);
     }
 }
+
+/* -------------------------*/
 
 /* AQUI INICIA LA BARRA CON ENLACES SOCIALES */
 

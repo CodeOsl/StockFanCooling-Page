@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TITULO PRINCIPAL */
+header {
+    font: 14px sans-serif;
+    width: 100%;
+}
+
+img {
+    width: 72px;
+    margin: -72px auto;
+    float: left;
+    display: block;
+}
+
+header h1 {
+    color: white;
+    background: black;
+    padding: 20px;
+    font-weight: lighter;
+    font-display: block;
+    margin-left: 70px;
+
+}
+/* --------------- */
+
+.body {
+    background: black;
+    display: block;
+}
+
+
+/* ESTILOS GENERALES */
+
+nav {
+    border-top: 2px solid #b91819;
+    margin-right: auto;
+    text-align: fixed;
+    font-family: sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0%;
+}
+
+nav li {
+    line-height: 3rem;
+    position: relative;
+    transition: .6s ease;
+}
+
+nav li ul {
+    position: absolute;
+}
+
+nav a{
+    color: white;
+    display: block;
+    padding: 0 5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #b91819;
+    transform: scale(1);
+    z-index: 100%;
+    transition: .5s;
+}
+
+/* PRIMER NIVEL*/
+
+nav > ul {
+    background: #2d2c2c;
+    display: table;
+    width: 100%;
+}
+
+nav > ul > li {
+    float: left;
+}
+
+/* SEGUNDO NIVEL */
+nav li li {
+    background: #222;
+    max-height: 0;
+    overflow: hidden;
+}
+
+nav li:hover >ul >li {
+    max-height: 500px;
+    overflow: visible;
+}
+
+nav > ul > li > ul {
+  top: 100%; 
+}
+
+/* TERCER NIVEL */
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
